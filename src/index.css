@@ -1,13 +1,45 @@
+/* src/index.css */
+/* src/index.css */
+:root {
+  --color-primary: #71c9ce;
+  --color-secondary: #a6e3e9;
+  --color-tertiary: #cbf1f5;
+  --bg-color: #e3fdfd;
+  --font-color: #000;
+  --input-focus: #a6e3e9;
+  --main-color: #71c9ce;
+  --font-color-sub: #71c9ce;
+  --bg-color-alt: #a6e3e9;
+  --active: #007bff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --font-color: #e3fdfd;
+  --input-focus: #a6e3e9;
+  --main-color: #a6e3e9;
+  --font-color-sub: #cbf1f5;
+  --bg-color-alt: #71c9ce;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Apply these variables to your elements */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

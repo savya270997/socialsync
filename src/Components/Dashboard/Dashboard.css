@@ -1,0 +1,370 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #121212; /* Default text color */
+  background-color: #ffffff; /* Default background color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  color: var(--color-primary); /* Light text color for dark mode */
+  background-color: #121212; /* Dark background color */
+}
+
+.dark-mode .social-container {
+  background: #2c2c2c; /* Darker background for social container */
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px,
+    rgba(0, 0, 0, 0.5) 0px 7px 13px -3px, rgba(0, 0, 0, 0.4) 0px -3px 0px inset;
+}
+
+.dark-mode .Btn {
+  background: #2c2c2c; /* Dark background for buttons */
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px,
+    rgba(0, 0, 0, 0.5) 0px 7px 13px -3px, rgba(0, 0, 0, 0.4) 0px -3px 0px inset;
+  color: #e0e0e0; /* Light text color for buttons */
+}
+
+.dark-mode .instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.dark-mode .facebook {
+  background-color: #3b5998; /* Slightly darker Facebook color */
+}
+
+.dark-mode .twitter {
+  background-color: #1a91da; /* Slightly darker Twitter color */
+}
+
+.dark-mode .stat-card {
+  background: #2c2c2c; /* Darker card background */
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px,
+    rgba(0, 0, 0, 0.5) 0px 7px 13px -3px, rgba(0, 0, 0, 0.4) 0px -3px 0px inset;
+  color: var(--color-primary); /* Light text color */
+}
+
+.dark-mode .stat-card-icon {
+  background: #3c3c3c; /* Darker circle background */
+  color: var(--color-secondary); /* Light text color */
+}
+
+.dark-mode .graph-container {
+  background: #1e1e1e; /* Darker background for graph container */
+}
+
+.dark-mode .graph {
+  background: #2c2c2c; /* Darker graph background */
+}
+
+.dark-mode .pastel-text-1 {
+  color: #a2c2e8; /* Pastel Blue */
+}
+
+.dark-mode .pastel-text-2 {
+  color: #a3d9a5; /* Pastel Green */
+}
+
+.dark-mode .pastel-text-3 {
+  color: #f7a3b6; /* Pastel Pink */
+}
+
+.dark-mode .pastel-text-4 {
+  color: #f7e4a8; /* Pastel Yellow */
+}
+
+/* Common Styles */
+.social-container {
+  display: flex;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.normal-container {
+  padding: 10px;
+}
+
+.Btn {
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-left: 10px;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.Button {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.facebook {
+  background-color: #4267b2;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.create {
+  background-color: #ff5733;
+  color: #fff;
+}
+
+.Btn:hover {
+  width: 110px;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+.Btn:hover .svgIcon,
+.Btn:hover img,
+.Btn:hover .icy {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.Btn img {
+  width: 20px;
+}
+
+.text {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 120px;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.svgIcon {
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.facebook img {
+  height: 1.5em;
+}
+
+.stat-container {
+  display: flex;
+}
+
+.stat-card {
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  margin-right: 18px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 28%;
+  transition: transform 0.3s;
+  margin-top: 18px;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.blue-circle {
+  background: #007bff;
+  color: white;
+}
+
+.yellow-circle {
+  background: #ffc107;
+  color: white;
+}
+
+.orange-circle {
+  background: #fd7e14;
+  color: white;
+}
+
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.stat-card-content {
+  flex-grow: 1;
+}
+
+.stat-card-title {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.stat-card-title-big {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.stat-card-count {
+  margin: 5px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.stat-card-change {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  gap: 10px;
+}
+
+.stat-card-change.increase {
+  color: green;
+}
+
+.stat-card-change.decrease {
+  color: red;
+}
+
+.graph-container {
+  display: flex;
+  margin-top: 18px;
+}
+
+.graph {
+  width: 46%;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 10px;
+  margin-right: 18px;
+}
+
+.additional-stat-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.pastel-text-1 {
+  color: #a2c2e8; /* Pastel Blue */
+}
+
+.pastel-text-2 {
+  color: #a3d9a5; /* Pastel Green */
+}
+
+.pastel-text-3 {
+  color: #f7a3b6; /* Pastel Pink */
+}
+
+.pastel-text-4 {
+  color: #f7e4a8; /* Pastel Yellow */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .social-container {
+    flex-direction: row;
+    align-items: flex-start;
+    width: fit-content;
+  }
+
+  .Btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .stat-card {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+
+  .graph {
+    width: 80%;
+    margin-right: 0;
+    margin-top: 15px;
+  }
+
+  .additional-stat-container {
+    flex-direction: column;
+  }
+  .stat-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .Btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .text {
+    width: 100px;
+  }
+
+  .stat-card {
+    font-size: 0.9em;
+  }
+
+  .graph-container {
+    flex-direction: column;
+  }
+}

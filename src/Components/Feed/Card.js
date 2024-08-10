@@ -10,6 +10,8 @@ import {
 import { BsImage } from "react-icons/bs";
 import "./Card.css"; // Import the CSS file for styling
 import facebook from "../../images/facebook-logo.png";
+import image1 from "../../images/image1.jpg";
+import image2 from "../../images/image3.jpg";
 
 const Card = () => {
   return (
@@ -42,7 +44,7 @@ const Card = () => {
             </div>
           </div>
           <div className="imgBg">
-            <BsImage className="cover" />
+            <img src={image1} alt="" />
           </div>
           <p className="message">
             <b>Savya Sanchi Sharma</b> This is an amazing view!{" "}
@@ -211,7 +213,7 @@ const Card = () => {
             </div>
           </div>
           <div className="imgBg">
-            <BsImage className="cover" />
+            <img src={image2} alt="" />
           </div>
           <p className="message">
             <b>Savya Sanchi Sharma</b> This is an amazing view!{" "}

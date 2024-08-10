@@ -368,3 +368,22 @@ body {
     flex-direction: column;
   }
 }
+@media (max-device-width: 1024px) {
+  .stat-container {
+    flex-direction: row;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .additional-stat-container {
+    flex-direction: row;
+    gap: 8px;
+    align-items: stretch;
+    width: 100%;
+  }
+  .graph-container {
+    flex-direction: column;
+  }
+  .graph {
+    width: 100%;
+  }
+}

@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { BsImage } from "react-icons/bs";
 import "./SocialProfile.css";
+import image from "../../images/image3.jpg";
 
 const SocialProfile = () => {
   return (
@@ -110,7 +111,7 @@ const SocialProfile = () => {
             </div>
           </div>
           <div className="imgBg">
-            <BsImage className="cover" />
+            <img src={image} alt="" />
           </div>
           <p className="message">
             <b>Savya Sanchi Sharma</b> This is an amazing view!{" "}

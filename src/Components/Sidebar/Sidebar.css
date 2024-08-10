@@ -1,7 +1,7 @@
 /* src/Components/Sidebar/Sidebar.css */
 .sidebar {
   position: fixed;
-  top: 5rem;
+  top: 5.2rem;
   left: 0;
   width: 16rem;
   height: calc(100vh - 5rem);
@@ -72,6 +72,14 @@
   background-color: #ff4191;
 }
 @media (max-width: 576px) {
+  .sidebar {
+    left: -16rem; /* Hide sidebar on larger screens */
+  }
+  .sidebar.open {
+    left: 0; /* Slide in when the sidebar has 'open' class */
+  }
+}
+@media (max-device-width: 1024px) {
   .sidebar {
     left: -16rem; /* Hide sidebar on larger screens */
   }

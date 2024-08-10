@@ -89,14 +89,15 @@ h1 {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .tabs {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    gap: 5px;
   }
 
   .tabs button {
     margin-right: 0;
     margin-bottom: 10px;
-    width: 100%;
+
     text-align: left;
   }
 

@@ -35,7 +35,7 @@ const Header = ({ toggleDarkMode }) => {
       <header className="header">
         <div className="header-left">
           <FaBars className="hamburger-icon" onClick={toggleSidebar} />
-          <Link to="/" className="app-name">
+          <Link to="/dashboard" className="app-name">
             <img className="logo-header" src={logo} alt="logo" />
           </Link>
         </div>

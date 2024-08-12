@@ -7,7 +7,7 @@ import {
   FaUserCircle,
   FaRetweet,
 } from "react-icons/fa";
-import { BsImage } from "react-icons/bs";
+
 import "./Card.css"; // Import the CSS file for styling
 import facebook from "../../images/facebook-logo.png";
 import image1 from "../../images/image1.jpg";

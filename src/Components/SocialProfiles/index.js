@@ -7,7 +7,7 @@ import {
   FaComment,
   FaShare,
 } from "react-icons/fa";
-import { BsImage } from "react-icons/bs";
+
 import "./SocialProfile.css";
 import image from "../../images/image3.jpg";
 

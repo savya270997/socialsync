@@ -25,6 +25,9 @@
 }
 
 /* Card Styles */
+.display-block {
+  display: block;
+}
 .card {
   display: flex;
   flex-direction: row;

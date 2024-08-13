@@ -15,7 +15,7 @@ import image2 from "../../images/image3.jpg";
 
 const Card = () => {
   return (
-    <div>
+    <div className="display-block">
       <div className="card">
         <div className="leftColumn">
           <div className="top">

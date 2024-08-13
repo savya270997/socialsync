@@ -29,6 +29,7 @@ body {
   background-color: var(--bg-color);
   color: var(--font-color);
   transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden;
 }
 
 /* Apply these variables to your elements */

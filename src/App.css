@@ -13,11 +13,11 @@
   padding-top: 2%;
 }
 .main-content {
-  margin-left: 250px; /* Adjust as needed for sidebar */
+  margin-left: 250px;
   padding: 20px;
-  padding-top: 100px; /* Add padding to accommodate fixed header */
-  width: calc(100% - 250px); /* Adjust as needed for sidebar */
-  min-height: calc(100vh - 85px); /* Adjust height for fixed header */
+  padding-top: 100px;
+  width: fit-content; /* Adjust as needed for sidebar */
+  min-height: calc(100vh - 85px);
   transition: background-color 0.3s;
 }
 
